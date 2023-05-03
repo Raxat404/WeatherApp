@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    object-fit: cover;
+    background: url(../img/Night_nature.jpg);
+    .container{
+        display: flex;
+        align-items: center;
+        .item{
+            text-align: center;
+            color: #fff;
+            padding: 40px;
+            &:first-child{
+            background-color: rgba(0,0,0,0.6);
+            border-radius: 10px;
+            }
+            h2{
+                font-size: 60px;
+            }
+            h1{
+                font-size: 110px;
+            }
+            h3{
+                font-size: 40px;
+            }
+            i{
+                font-size: 40px;
+            }
+            h4{
+                font-size: 32px;
+            }
+            input{
+                padding: 20px 40px;
+                width: 500px;
+                font-size: 32px;
+                border-radius: 10px;
+                background-color: rgba(0,0,0,0.6);
+                color: #fff;
+                border: none;
+                outline: none;
+                &::placeholder{
+                    color: #fff;
+                    opacity: 0.8;
+                    font-size: 24px;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        
+        .item{
+            width: 90%;
+
+            h2{
+                font-size: 40px!important;
+            }
+
+            &:last-child{
+                padding: 0!important;
+            }
+
+            input{
+                width: 100%!important;
+            }
+        }
+    }
+}

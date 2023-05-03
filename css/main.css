@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  object-fit: cover;
+  background: url(../img/Night_nature.jpg);
+}
+.wrapper .container {
+  display: flex;
+  align-items: center;
+}
+.wrapper .container .item {
+  text-align: center;
+  color: #fff;
+  padding: 40px;
+}
+.wrapper .container .item:first-child {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+.wrapper .container .item h2 {
+  font-size: 60px;
+}
+.wrapper .container .item h1 {
+  font-size: 110px;
+}
+.wrapper .container .item h3 {
+  font-size: 40px;
+}
+.wrapper .container .item i {
+  font-size: 40px;
+}
+.wrapper .container .item h4 {
+  font-size: 32px;
+}
+.wrapper .container .item input {
+  padding: 20px 40px;
+  width: 500px;
+  font-size: 32px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  outline: none;
+}
+.wrapper .container .item input::placeholder {
+  color: #fff;
+  opacity: 0.8;
+  font-size: 24px;
+  font-style: italic;
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .container .item {
+    width: 90%;
+  }
+  .container .item h2 {
+    font-size: 40px !important;
+  }
+  .container .item:last-child {
+    padding: 0 !important;
+  }
+  .container .item input {
+    width: 100% !important;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
